@@ -7,13 +7,23 @@
 //the constructo takes a parameter - animalName
 // property called - animalName
 //method to render itself on the screen - render()
-let createButton = document.getElementById('makeCat');
 
-createButton.addEventListener('click', animalName);
 
-function animalName(){
-    let cat = document.getElementById('makeCat').value
+
+
+function animal(animalName){
+    this.animalName = animalName
 }
 
+animal.protype.render = function() {
+    
+    console.log("I am a live render function")
+    //do the render thing .... put yourself on the html screen
+}
+//Target the cat button
+//attach a listener to listen to the 'click'
+//respond to the click with my own list of things to do (create and render the cat)
 
-animal.render();
+let createButton = document.getElementById('makeCat');
+
+createButton.addEventListener('click', );
