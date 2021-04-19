@@ -11,19 +11,31 @@
 
 
 
-function animal(animalName){
-    this.animalName = animalName
-}
+function Animal(animalName){
+    this.animalName = animalName;
+ }
 
-animal.protype.render = function() {
+Animal.prototype.render = function() {
     
     console.log("I am a live render function")
-    //do the render thing .... put yourself on the html screen
+    let catDiv = document.createElement('div');
+    catDiv.className = 'catObject';
+    catDiv.textContent =  'cat';
+
+
 }
+
 //Target the cat button
 //attach a listener to listen to the 'click'
 //respond to the click with my own list of things to do (create and render the cat)
 
-let createButton = document.getElementById('makeCat');
+let catButton = document.getElementById('makeCat');
 
-createButton.addEventListener('click', );
+catButton.addEventListener('click', catName);
+
+function catName(){
+    console.log('cat was clicked')
+    //let cat = new createButton("makeCat");
+}
+
+

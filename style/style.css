@@ -22,3 +22,13 @@ h1{
     display: block;
     margin-bottom: 100px;
 }
+.catObject{
+    background-color: lightyellow;
+    border:solid black 2px;
+    padding: 50px;
+    height: 75px;
+    width: 75px;
+    display:inline;
+    border-radius: 50%;
+    margin:75px;
+}
