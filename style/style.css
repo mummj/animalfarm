@@ -2,33 +2,70 @@ body{
     background-color: lightblue;
 }
 #farm{
-    position: absolute;
-    left:50%;
-    transform:translateX(-50%) translateY(-50%);
-    white-space: nowrap; 
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 }
 .make{
+    display:flex;
+    align-items: center;
+    justify-content: center;
     background-color: lightgray;
     border:solid black 2px;
     padding: 50px;
     height: 75px;
     width: 75px;
-    display:inline;
     border-radius: 50%;
-    margin:75px;
+    margin:70px;
+    margin-bottom: 0;
+    text-align: center;
 }
 h1{
     text-align: center;
     display: block;
-    margin-bottom: 100px;
+    margin-bottom: 20px;
 }
 .catObject{
     background-color: lightyellow;
     border:solid black 2px;
     padding: 50px;
-    height: 75px;
-    width: 75px;
-    display:inline;
+    height: 50px;
+    width: 50px;
     border-radius: 50%;
-    margin:75px;
+    margin:82px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.dogObject{
+    background-color: lightyellow;
+    border:solid black 2px;
+    padding: 50px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin:82px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.sheepObject{
+    background-color: lightyellow;
+    border:solid black 2px;
+    padding: 50px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin:82px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.horseObject{
+    background-color: lightyellow;
+    border:solid black 2px;
+    padding: 50px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin:82px;
+    margin-top: 0;
+    margin-bottom: 0;
 }

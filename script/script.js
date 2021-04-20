@@ -17,25 +17,52 @@ function Animal(animalName){
 
 Animal.prototype.render = function() {
     
-    console.log("I am a live render function")
-    let catDiv = document.createElement('div');
-    catDiv.className = 'catObject';
-    catDiv.textContent =  'cat';
+    //console.log("I am a live render function")
+    let animalDiv = document.createElement('div');
+    animalDiv.className = `${this.animalName}Object`;
+    animalDiv.textContent =  this.animalName;
 
+    let makeCatButton = document.querySelector('#farm');
+    makeCatButton.appendChild(animalDiv);
 
 }
 
-//Target the cat button
-//attach a listener to listen to the 'click'
-//respond to the click with my own list of things to do (create and render the cat)
-
+//Make Cat
 let catButton = document.getElementById('makeCat');
 
 catButton.addEventListener('click', catName);
 
 function catName(){
-    console.log('cat was clicked')
-    //let cat = new createButton("makeCat");
+    let cat = new Animal('cat');
+    cat.render();
 }
 
+//Make dog
+let dogButton = document.getElementById('makeDog');
 
+dogButton.addEventListener('click', dogName);
+
+function dogName(){
+    let dog = new Animal('dog');
+    dog.render()
+}
+
+//Make Sheep
+let sheepButton = document.getElementById('makeSheep');
+
+sheepButton.addEventListener('click', sheepName);
+
+function sheepName(){
+    let sheep = new Animal('sheep');
+    sheep.render()
+}
+
+//Make Horse
+let horseButton = document.getElementById('makeHorse');
+
+horseButton.addEventListener('click', horseName);
+
+function horseName(){
+    let horse = new Animal('horse');
+    horse.render()
+}
