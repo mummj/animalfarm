@@ -1,29 +1,50 @@
 'use strict'
 
-//console.log("hello world")
+//constructor function
+function Animal(animalName){
+    this.animalName = animalName;
+ }
+//renter tells the specific animal to put into html
+Animal.prototype.render = function() {
+    // let animalImg = document.createElement('img');
+    // animalImg.className = `${this.animalName}Object`;
+    // let animalSection = document.getElementById(`#${this.animalName}Section`);
+    // animalSection.appendChild(animalImg);
+    let animalDiv = document.createElement('div');
+    animalDiv.className = `${this.animalName}Object`;
+    animalDiv.textContent =  this.animalName;
+    let animalSection = document.querySelector(`#${this.animalName}Section`);
+    animalSection.appendChild(animalDiv);
 
-//TODO: I want to create a template - constructor function for an animal
-//create a single constructor - template
-//the constructo takes a parameter - animalName
-// property called - animalName
-//method to render itself on the screen - render()
-
-
-
-
-function animal(animalName){
-    this.animalName = animalName
 }
 
-animal.protype.render = function() {
-    
-    console.log("I am a live render function")
-    //do the render thing .... put yourself on the html screen
+//Make Cat
+let catButton = document.getElementById('makeCat');
+catButton.addEventListener('click', catName);
+function catName(){
+    let cat = new Animal('cat');
+    cat.render();
 }
-//Target the cat button
-//attach a listener to listen to the 'click'
-//respond to the click with my own list of things to do (create and render the cat)
+//Make dog
+let dogButton = document.getElementById('makeDog');
+dogButton.addEventListener('click', dogName);
+function dogName(){
+    let dog = new Animal('dog');
+    dog.render()
+}
 
-let createButton = document.getElementById('makeCat');
+//Make Sheep
+let sheepButton = document.getElementById('makeSheep');
+sheepButton.addEventListener('click', sheepName);
+function sheepName(){
+    let sheep = new Animal('sheep');
+    sheep.render()
+}
 
-createButton.addEventListener('click', );
+//Make Horse
+let horseButton = document.getElementById('makeHorse');
+horseButton.addEventListener('click', horseName);
+function horseName(){
+    let horse = new Animal('horse');
+    horse.render()
+}

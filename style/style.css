@@ -2,23 +2,63 @@ body{
     background-color: lightblue;
 }
 #farm{
-    position: absolute;
-    left:50%;
-    transform:translateX(-50%) translateY(-50%);
-    white-space: nowrap; 
+    display: flex;
+   justify-content: center;
 }
-.make{
-    background-color: lightgray;
-    border:solid black 2px;
-    padding: 50px;
-    height: 75px;
-    width: 75px;
-    display:inline;
+img{
+    display:block;
+    height: 150px;
+    width: 150px;
     border-radius: 50%;
-    margin:75px;
+    margin:70px;
+    margin-bottom: 0;
+}
+div{
+ display: flex;
+ justify-content: center;
+ margin:85px;
+ margin-top:0px;
+ margin-bottom: 0px;
 }
 h1{
     text-align: center;
     display: block;
-    margin-bottom: 100px;
+    margin-bottom: 20px;
+    font-family: 'Ubuntu Mono';
+    font-size:60px;
+}
+.catObject{
+    background-color: lightcoral;
+    border:solid black 2px;
+    padding: 50px;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+  
+}
+.dogObject{
+    background-color: lightyellow;
+    border:solid black 2px;
+    padding: 50px;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+   
+}
+.sheepObject{
+    background-color: lightgreen;
+    border:solid black 2px;
+    padding: 50px;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+  
+}
+.horseObject{
+    background-color: lightsteelblue;
+    border:solid black 2px;
+    padding: 50px;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
 }
