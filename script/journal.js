@@ -20,7 +20,7 @@ function makeNewArticle(event){
 
     article.appendChild(h2);
     article.appendChild(p);
-    const main = document.querySelector("main");
-    main.appendChild(article);
+    const div = document.querySelector("div");
+    div.appendChild(article);
     
 }

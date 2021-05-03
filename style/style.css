@@ -1,6 +1,15 @@
 body{
     background-color: lightblue;
 }
+header{
+    background-color: lightcoral;
+    padding:50px;
+    border:2px solid black;
+    border-bottom: none;
+}
+header > h2{
+    text-align:center;
+}
 main{
     display:grid;
     grid-template-columns: 250px 1fr 250px;
@@ -10,22 +19,27 @@ main > div{
 order:2;
 display:flex;
 justify-content: center;
-height:500px;
+height:700px;
+border:2px solid black
 }
 main > article{
 order:1;
 background-color: lightcoral;
+border-left:2px solid black;
 }
 main > aside{
     background-color: lightcoral;
     order:3;
+    text-align: center;
+    border-right:2px solid black;
 }
 img{
     height: 100px;
     width: 100px;
     border-radius: 50%;
     margin:30px;
-    margin-bottom: 0;}
+    margin-bottom: 0;
+}
  h1{
     text-align: center;
     display: block;
@@ -36,39 +50,46 @@ img{
 .catObject{
     background-color: lightcoral;
     border:solid black 2px;
-    padding: 25px;
+    padding: 40px;
     height: 8px;
     width: 8px;
     border-radius: 50%;
-  
+    margin-left:35px;
 } 
  .dogObject{
     background-color: lightyellow;
     border:solid black 2px;
-    padding: 25px;
+    padding: 40px;
     height: 8px;
     width: 8px;
     border-radius: 50%;
+    margin-left: 35px;
    
 }
 .sheepObject{
     background-color: lightgreen;
     border:solid black 2px;
-    padding: 25px;
+    padding: 40px;
     height: 8px;
     width: 8px;
     border-radius: 50%;
-  
+    margin-left: 35px;
 }
 .horseObject{
     background-color: lightsteelblue;
     border:solid black 2px;
-    padding: 25px;
+    padding: 40px;
     height: 8px;
     width: 8px;
     border-radius: 50%;
+    margin-left: 35px;
+  
 } 
 footer{
     display:flex;
     justify-content: center;
+    background-color: lightcoral;
+    padding: auto;
+    border:2px solid black;
+    border-top:none;
 }

@@ -1,0 +1,49 @@
+body{
+    background-color: lightcoral;
+}
+header{
+    background-color: lightblue;
+    padding:10px;
+    border:2px solid black;
+    border-bottom:none;
+}
+h1{
+    text-align: center;
+}
+main{
+    display:grid;
+    grid-template-columns: 250px 1fr 250px;
+}
+
+article{
+    background-color: white;
+    height:203px;
+    margin:5px;
+    text-align: center;
+
+}
+main > div{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding:25px;
+    background-color:lightcoral;
+    height:500px;
+    border:2px solid black;
+}
+main > aside{
+    background-color: lightblue;
+    text-align: center;
+}
+#nav{
+    border-left:2px solid black;
+}
+#ad{
+    border-right:2px solid black;
+}
+footer{
+    display:flex;
+    justify-content: center;
+    background-color: lightblue;
+    border:2px solid black;
+    border-top:none;
+}
